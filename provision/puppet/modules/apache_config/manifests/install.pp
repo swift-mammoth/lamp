@@ -1,4 +1,8 @@
 class apache_config::install {
 
-  class { 'apache': }
+  include apache::mod::php
+  
+  class { 'apache': 
+    mpm_module => 'prefork',
+  }
 }

@@ -1,0 +1,8 @@
+use <%= @db_name %>;
+create table jokes (id int, joke varchar(255) not null);
+
+LOAD DATA INFILE "<%= @datafile %>"
+INTO TABLE  jokes
+COLUMNS TERMINATED BY ','
+LINES TERMINATED BY '\n';
+  

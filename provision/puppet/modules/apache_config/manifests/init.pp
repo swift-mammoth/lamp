@@ -1,6 +1,4 @@
-class apache_config (
-
-){
+class apache_config {
 
   class { 'apache_config::install': }
   -> class { 'apache_config::config': }

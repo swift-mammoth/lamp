@@ -4,6 +4,8 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
 
+  config.vm.network "private_network", ip: "192.168.50.50"
+
   config.vm.provision "shell", path: "./provision/shell/install_puppet_agent.sh"
   
   config.vm.synced_folder "./provision/puppet/modules/", "/etc/puppetlabs/code/environments/production/modules"

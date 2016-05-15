@@ -1,12 +1,12 @@
 class mysql_config (
-  $db_root_password = 'rootpassword',
-  $db_name          = 'jokes',
-  $db_user          = 'joker',
-  $db_password      = 'userpassword',
+  $db_root_password = 'changeme',
+  $db_name          = 'my_db',
+  $db_user          = 'user',
+  $db_password      = 'changeme',
   $db_host          = '127.0.0.1', 
   $grants           = ['ALL'],
-  $datafile         = '/usr/share/mysql/datafile.csv',
-  $create_table     = '/usr/share/mysql/create_table.sql',
+  $datafile         = '/tmp/datafile.csv',
+  $create_table     = '/tmp/create_table.sql',
 ){
 
   class { 'mysql_config::install':

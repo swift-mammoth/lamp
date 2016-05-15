@@ -1,7 +1,7 @@
 class joker (
-  $db_name     = 'jokes',
-  $db_user     = 'joker',
-  $db_password = 'userpassword',
+  $db_name     = 'my_db',
+  $db_user     = 'db_user',
+  $db_password = 'changme',
   $db_host     = '127.0.0.1',
   $docroot     = '/var/www/html',
   $site_name   = 'jokes',

@@ -1,6 +1,6 @@
 class apache_config (
-  $docroot   = '/var/www/html',
-  $site_name = 'jokes',
+  $docroot   = '/var/www',
+  $site_name = 'html',
 ){
 
   class { 'apache_config::install': }
